@@ -111,10 +111,14 @@ nav a:hover, nav a.active{
     }
 }
 
+
+/* hore section */
 section{
     min-height: 100vh;
     padding: 5rem 9% 5rem;
 }
+
+
 
 .home{
     display: flex;
@@ -316,13 +320,30 @@ span{
     background: black;
 }
 
+.skills h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.skills h3{
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.skills p{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
 .skills-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+   aspect-ratio: 10/ 1;
     margin-top: 3rem;
-    /* width: 20%;
-    height: 40%; */
+    cursor: pointer;
 }
 
 .skills-card{
@@ -339,3 +360,84 @@ span{
     border-color: var(--medium-blue);
     box-shadow: 0 10px 30px var(--glow-blue);
 }
+
+.skills-card i{
+    font-size: 2.5rem;
+    color: var(--glow-blue);
+    margin-bottom: 1rem;
+}
+
+
+/* footer */
+footer{
+    background:black;
+    padding: 3rem 5%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+footer p{
+    font-size: 2rem;
+}
+
+
+.social-links{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+}
+
+.social-links a{
+     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid var(--glow-blue);
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 1rem 1.5rem 1rem;
+    transition: 0.3s ease;
+    color: var(--glow-blue);
+}
+
+.social-links a:hover{
+     color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: var(--glow-blue);
+    box-shadow: 0 0 25px var(--glow-blue);
+    
+
+
+@media (max-width: 768px) {
+    .home{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 8rem;
+    }
+
+    .home-content{
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
+
+
+    .home-img{
+        width:280;
+        height: 280;
+    }
+
+    .social-icons{
+        display: none;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
+}
+
+
